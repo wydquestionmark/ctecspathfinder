@@ -1,0 +1,119 @@
+.app {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 3rem;
+  text-align: center;
+}
+.logo {
+  display: block;
+  margin: 2rem auto 1rem;
+  max-width: 200px;
+}
+
+.heading {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.intro {
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+  font-size: 1rem;
+}
+
+.email-input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 17px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 1.5rem;
+}
+
+.start-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.start-button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}
+.start-button:hover {
+  background-color: #005fa3; /* or any darker/lighter shade you prefer */
+  transform: scale(1.02);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.secondary-button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.secondary-button:hover {
+  background-color: #005fa3; /* or any darker/lighter shade you prefer */
+  transform: scale(1.02);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+
+.choices button {
+  margin: 0.5rem 0; /* vertical spacing between buttons */
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 15px;
+  background-color: #003366;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+  max-width: 300px;
+  transition: background-color 0.2s ease;
+}
+.choices button:hover {
+  background-color: #0055aa;
+  transform: scale(1.02);
+  transition: background-color 0.2s ease, transform 0.2s ease; /* or whatever hover color you prefer */
+}
+.question-count {
+  margin-top: 6rem; /* Creates space between logo and question */
+  font-weight: regular;
+}
+.trade-matches {
+  margin-top: 6rem; /* Creates space between logo and question */
+  font-weight: regular;
+}
+@media (max-width: 600px) {
+  .app {
+    padding: 1rem;
+  }
+
+  .email-input,
+  .choices button,
+  .start-button,
+  .secondary-button {
+    width: 100%;
+    max-width: none;
+    font-size: 1rem;
+  }
+
+  .logo {
+    max-width: 150px;
+    margin: 1rem auto;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+}
