@@ -104,6 +104,8 @@ body {
 .question-count {
   margin-top: 6rem; /* Creates space between logo and question */
   font-weight: regular;
+  color: #333;
+  line-height: 1.4;
 }
 .trade-matches {
   margin-top: 6rem; /* Creates space between logo and question */
@@ -133,6 +135,7 @@ body {
     color: black;              /* ✅ Add this */
   }
   .choices button,
+  
   .start-button,
   .secondary-button {
     width: 100%;
