@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import questions from "./questions"
+import questions from "./questions";
 import logo from "/ctecslogo.png";
 
 const allTrades = [

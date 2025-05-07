@@ -175,17 +175,13 @@ body {
   }
 }
 .header-bar {
-  position: relative;
+  position: sticky; /* sticky takes priority over relative */
+  top: 0;
+  z-index: 100;
   background-color: #f0f0f0;
   height: 80px;
   width: 100%;
-  z-index: 10;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-.header-bar {
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 .logo {
   max-width: 170px;
@@ -207,20 +203,6 @@ body {
 }
 .logo-button:focus {
   outline: none;
-}
-@media (max-width: 600px) {
-  .logo {
-    max-width: 170px;
-  }
-
-  .email-input,
-  .start-button {
-    max-width: 90%;
-  }
-
-  .app {
-    padding: 1rem;
-  }
 }
 .welcome {
   display: flex;
