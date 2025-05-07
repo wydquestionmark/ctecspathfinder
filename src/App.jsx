@@ -45,29 +45,31 @@ export default function App() {
   <img src={logo} alt="CTECS logo" className="logo" />
 </button>
       {!hasStarted ? (
-        <div className="welcome">
-          <h1 className="heading">CTECS PathFinder</h1>
-          <p className="intro">
-            This tool is designed to help you discover which career and technical pathway best fits your strengths and interests.
-            Please enter your email to begin the assessment.
-          </p>
-          <input
-            type="email"
-            placeholder="Enter your email"
-            value={email}
-            onChange={e => setEmail(e.target.value)}
-            className="email-input"
-          />
-          <br />
-          <button
-            disabled={!isValidEmail(email)}
-            onClick={() => setHasStarted(true)}
-            className="start-button"
-          >
-            Start Assessment
-          </button>
-        </div>
-      ) : completed ? (
+  <div className="welcome">
+    <h1 className="heading">CTECS PathFinder</h1>
+
+    <p className="intro">
+      This tool is designed to help you discover which career and technical pathway best fits your strengths and interests.
+      Please enter your email to begin the assessment.
+    </p>
+
+    <input
+      type="email"
+      placeholder="Enter your email"
+      value={email}
+      onChange={e => setEmail(e.target.value)}
+      className="email-input"
+    />
+
+    <button
+      disabled={!isValidEmail(email)}
+      onClick={() => setHasStarted(true)}
+      className="start-button"
+    >
+      Start Assessment
+    </button>
+  </div>
+) : completed ? (
         <div>
         <p className="trade-matches"> Your Top 5 Trade Matches </p>
         <ol>
