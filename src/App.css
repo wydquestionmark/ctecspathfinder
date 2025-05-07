@@ -111,7 +111,7 @@ body {
 }
 .trade-matches {
   margin-top: 6rem; /* Creates space between logo and question */
-  font-weight: regular;
+  font-weight: bold;
   font-size: 1.5em;
   color: black;
 }

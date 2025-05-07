@@ -95,7 +95,7 @@ export default function App() {
   ))}
 </ol>
           <div style={{ marginTop: "2rem" }}>
-            <h4>Click on your top trade above to learn more about it.</h4>
+            <h4>Click on your top trade above to learn more.</h4>
             <button
               onClick={() => window.open("https://wolcott.cttech.org/programs/career-technical-education/", "_blank")}
               className="secondary-button"
