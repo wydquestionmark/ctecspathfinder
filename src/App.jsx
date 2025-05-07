@@ -41,9 +41,13 @@ export default function App() {
 
   return (
     <div className="app">
-      <button onClick={() => window.location.reload()} className="logo-button">
-  <img src={logo} alt="CTECS logo" className="logo" />
-</button>
+      <header className="header-bar">
+  <div className="logo-wrapper">
+    <button onClick={() => window.location.reload()} className="logo-button">
+      <img src={logo} alt="CTECS logo" className="logo" />
+    </button>
+  </div>
+</header>
       {!hasStarted ? (
   <div className="welcome">
     <h1 className="heading">CTECS PathFinder</h1>
