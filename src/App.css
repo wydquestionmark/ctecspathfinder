@@ -1,10 +1,16 @@
-.app {
+body {
+  margin: 0;
+  padding: 0;
   background-color: white;
   font-family: sans-serif;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 3rem;
-  text-align: center;
+}
+.app {
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .logo {
   display: block;
@@ -33,15 +39,21 @@
   max-width: 260px;
   margin-top: 3rem;
   margin-bottom: 1.5rem;
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
 }
 
 .start-button {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 300px;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   background-color: #003366;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
@@ -99,10 +111,27 @@
 }
 @media (max-width: 600px) {
   .app {
-    padding: 1rem;
+    background-color: white;
+    min-height: 100vh;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: sans-serif;
+    text-align: center;
+    box-sizing: border-box;
   }
 
-  .email-input,
+  .email-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 17px;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 1.5rem;
+    background-color: white;   /* ✅ Add this */
+    color: black;              /* ✅ Add this */
+  }
   .choices button,
   .start-button,
   .secondary-button {
@@ -129,4 +158,18 @@
 
 .logo-button:focus {
   outline: none;
+}
+@media (max-width: 600px) {
+  .logo {
+    max-width: 150px;
+  }
+
+  .email-input,
+  .start-button {
+    max-width: 90%;
+  }
+
+  .app {
+    padding: 1rem;
+  }
 }
