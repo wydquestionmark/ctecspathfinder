@@ -75,7 +75,7 @@ export default function App() {
   </div>
 ) : completed ? (
         <div>
-        <p className="trade-matches"> Your Top 5 Trade Matches </p>
+        <p className="trade-matches"> Your Top 5 Trade Matches! </p>
         <ol className="top-trades-list">
   {topTrades.map(([trade, score], i) => (
     <li key={i}>
