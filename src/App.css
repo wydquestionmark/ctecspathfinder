@@ -185,6 +185,8 @@ body {
 .heading {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  color: #333;
+  line-height: 1.4;
 }
 
 .intro {
