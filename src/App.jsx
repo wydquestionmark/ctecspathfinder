@@ -76,24 +76,24 @@ export default function App() {
 ) : completed ? (
         <div>
         <p className="trade-matches"> Your Top 5 Trade Matches </p>
-        <ol>
-            {topTrades.map(([trade, score], i) => (
-              <li key={i}>
-                {i === 0 ? (
-                  <a
-                    href={`https://www.google.com/search?q=${encodeURIComponent(trade + " Oliver Wolcott Technical High School")}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#0066cc", fontWeight: "bold", textDecoration: "none" }}
-                  >
-                    {trade} ({score} pts)
-                  </a>
-                ) : (
-                  `${trade} (${score} pts)`
-                )}
-              </li>
-            ))}
-          </ol>
+        <ol className="top-trades-list">
+  {topTrades.map(([trade, score], i) => (
+    <li key={i}>
+      {i === 0 ? (
+        <a
+          href={`https://www.google.com/search?q=${encodeURIComponent(trade + " Oliver Wolcott Technical High School")}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="top-trade-link"
+        >
+          {trade} ({score} pts)
+        </a>
+      ) : (
+        <span className="trade-text">{trade} ({score} pts)</span>
+      )}
+    </li>
+  ))}
+</ol>
           <div style={{ marginTop: "2rem" }}>
             <h4>Click on your top trade above to learn more about it.</h4>
             <button
