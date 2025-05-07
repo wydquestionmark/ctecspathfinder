@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-import questions from "./questions";
+import questions from "./questions"
 import logo from "/ctecslogo.png";
 
 const allTrades = [
@@ -109,7 +109,7 @@ export default function App() {
       ) : (
         <div className="card">
           <p className="question-count"> Question {index + 1} of {questions.length}</p>
-          <h3>{questions[index].question}</h3>
+          <h3 className="question-text">{questions[index].question}</h3>
           <div className="choices">
             {questions[index].choices.map((choice, i) => (
               <button key={i} onClick={() => handleAnswer(choice)}>
