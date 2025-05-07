@@ -101,6 +101,9 @@ body {
   transform: scale(1.02);
   transition: background-color 0.2s ease, transform 0.2s ease; /* or whatever hover color you prefer */
 }
+.question-text {
+  color: black;
+}
 .question-count {
   margin-top: 6rem; /* Creates space between logo and question */
   font-weight: regular;
